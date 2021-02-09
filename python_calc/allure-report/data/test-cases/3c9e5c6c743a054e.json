@@ -1,0 +1,146 @@
+{
+  "uid" : "3c9e5c6c743a054e",
+  "name" : "test_sub[s5]",
+  "fullName" : "test_calc.TestCalc#test_sub",
+  "historyId" : "d197f36b19212b435b4e136f60e889ab",
+  "time" : {
+    "start" : 1612884481342,
+    "stop" : 1612884481342,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 0 == 1",
+  "statusTrace" : "self = <python_calc.test_calc.TestCalc object at 0x7f80e5d6b7f0>, get_calc = <python_calc.calc.Calculator object at 0x7f80e5d3a820>\nget_datas3 = [0, 0, 1]\n\n    @allure.story(\"测试减法\")\n    @pytest.mark.run(order=2)\n    @pytest.mark.sub\n    def test_sub(self, get_calc, get_datas3):\n        # 调用 sub 方法\n        with allure.step(\"测试用例-数值相减\"):\n            result = get_calc.sub(get_datas3[0], get_datas3[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n>       assert result == get_datas3[2]\nE       assert 0 == 1\n\ntest_calc.py:60: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1612884481277,
+      "stop" : 1612884481277,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_datas3",
+    "time" : {
+      "start" : 1612884481341,
+      "stop" : 1612884481341,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 0 == 1",
+    "statusTrace" : "self = <python_calc.test_calc.TestCalc object at 0x7f80e5d6b7f0>, get_calc = <python_calc.calc.Calculator object at 0x7f80e5d3a820>\nget_datas3 = [0, 0, 1]\n\n    @allure.story(\"测试减法\")\n    @pytest.mark.run(order=2)\n    @pytest.mark.sub\n    def test_sub(self, get_calc, get_datas3):\n        # 调用 sub 方法\n        with allure.step(\"测试用例-数值相减\"):\n            result = get_calc.sub(get_datas3[0], get_datas3[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n>       assert result == get_datas3[2]\nE       assert 0 == 1\n\ntest_calc.py:60: AssertionError",
+    "steps" : [ {
+      "name" : "测试用例-数值相减",
+      "time" : {
+        "start" : 1612884481342,
+        "stop" : 1612884481342,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "90df3327ff8b8da1",
+      "name" : "stdout",
+      "source" : "90df3327ff8b8da1.txt",
+      "type" : "text/plain",
+      "size" : 55
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_datas3::0",
+    "time" : {
+      "start" : 1612884481347,
+      "stop" : 1612884481347,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "tag",
+    "value" : "sub"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "AirdeMacBook-Air.local"
+  }, {
+    "name" : "thread",
+    "value" : "18717-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_datas3",
+    "value" : "[0, 0, 1]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=2)", "sub" ]
+  },
+  "source" : "3c9e5c6c743a054e.json",
+  "parameterValues" : [ "[0, 0, 1]" ]
+}
